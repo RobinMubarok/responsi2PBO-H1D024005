@@ -6,3 +6,9 @@ Setelah anda menyelesaikan kode, tolong jawab pertanyaan dibawah ini ya =
 3. Apa perbedaan mendasar antara extends dan implements dalam konteks interface, jika dilihat secara konsep tanpa melihat contoh kode?
 4. Apa alasan diperkenalkannya default method dalam interface, dan bagaimana fitur ini memengaruhi keberlangsungan (compatibility) suatu sistem yang sudah berjalan?
 5. Bagaimana konsep multiple interface memperluas fleksibilitas desain tanpa menimbulkan masalah kompleksitas yang biasa muncul pada multiple inheritance?
+
+- interface digunakan sebagai cetak biru dari kelas, yang menentukan bagaiman kelas akan bekerja. Interface mampu secara native menciptakan kontrak perilaku karena otomatis mendeklarasikan atribut dan method menjadi public abstract.
+- banyaknya implementasi interface berarti banyaknya penafsiran yang diperoleh dari kelas yang berbeda-beda, menjadikannya sangat efektif untuk menangani banyak kemungkinan tipe.
+- extends merupakan cara kita menurunkan suatu kelas. Atribut dan metode di dalamnya sudah tersedia dan tidak perlu reimplementasi. Implements digunakan oleh interface sebagai kontrak dari sebuah metode.
+- default method menjadikan sebuah metode asli dalam sebuah interface. Hal itu berguna bila kelas yang mengimplementasi memang tidak perlu untuk mendiferensiasi implementasi methodnya.
+- multiple interface lebih sederhana, tidak seperti multiple inheritance yang memiliki banyak access modifier.

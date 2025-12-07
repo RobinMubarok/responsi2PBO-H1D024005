@@ -6,4 +6,8 @@ Jawablah pertanyaan berikut:
 4. Apa keuntungan menggunakan polimorfisme dalam sistem inventaris seperti contoh di atas?
 5. Bagaimana cara kerja dynamic dispatch pada Java saat memanggil method override?
 
--
+- polimorfisme adalah bentuk dan implementasi yang berbeda untuk metode atau atribut yang sama. Override bekerja dengan mengganti sepenuhnya deklarasi dari metode.
+- karena 'defaultMesin' berbagi metode dan atribut yang sama sebagai parent class.
+- override mengganti implementasi, overload menambah kemungkinan parameter.
+- polimorfisme memungkinkan mesin yang berbeda memiliki sistem kerja yang sama sehingga mudah diorganisir.
+- dynamic dispatch berarti pemilihan implementasi yang dilakukan pada saat runtime.
