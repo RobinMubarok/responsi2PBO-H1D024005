@@ -1,13 +1,12 @@
-public abstract class KendaraanGalaksi {
+abstract class KendaraanGalaksi {
 
     // ==========================================================
     // ATRIBUT/STATE (semua private)
     // ==========================================================
 
-    // TODO:
-    // - String namaKendaraan
-    // - int levelEnergi         (0–100)
-    // - int kapasitasPenumpang
+    private String namaKendaraan;
+    private int levelEnergi;
+    private int kapasitasPenumpang;
 
 
     // ==========================================================
@@ -19,6 +18,12 @@ public abstract class KendaraanGalaksi {
     //   - namaKendaraan
     //   - kapasitasPenumpang
     // levelEnergi default = 100.
+    KendaraanGalaksi(String namaKendaraan, int kapasitasPenumpang){
+        this.kapasitasPenumpang = kapasitasPenumpang;
+        this.namaKendaraan = namaKendaraan;
+        this.levelEnergi = 100;
+    }
+
 
 
     // ==========================================================
@@ -26,8 +31,21 @@ public abstract class KendaraanGalaksi {
     // ==========================================================
 
     // TODO: Getter namaKendaraan
+    String getNamaKendaraan() {
+        return this.namaKendaraan;
+    }
     // TODO: Getter levelEnergi
+    int getLevelEnergi() {
+        return this.levelEnergi;
+    }
     // TODO: Getter kapasitasPenumpang
+    int getKapasitasPenumpang() {
+        return this.kapasitasPenumpang;
+    }
+
+    void setLevelEnergi(int levelEnergi){
+        this.levelEnergi = levelEnergi;
+    }
 
 
     // ==========================================================
@@ -38,7 +56,9 @@ public abstract class KendaraanGalaksi {
     // Method final tampilStatus()
     // Format:
     // "[namaKendaraan] | Energi: [levelEnergi]% | Kapasitas: [kapasitasPenumpang] awak"
-
+    void tampilStatus(){
+        System.out.println(this.namaKendaraan + " | Energi: " + this.levelEnergi + "% | Kapasitas: " + this.kapasitasPenumpang + " awak");
+    }
 
     // ==========================================================
     // ABSTRACT METHOD (WAJIB DIIMPLEMENTASI SUBCLASS)
@@ -46,10 +66,13 @@ public abstract class KendaraanGalaksi {
 
     // TODO:
     // abstract void aktifkanMesin();
+    abstract void aktifkanMesin();
 
     // TODO:
     // abstract void jelajah(int jarak);
+    abstract void jelajah(int jarak);
 
     // TODO:
     // abstract void isiEnergi(int jumlah);
+    abstract void isiEnergi(int jumlah);
 }

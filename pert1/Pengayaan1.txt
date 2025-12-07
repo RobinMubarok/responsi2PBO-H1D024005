@@ -6,4 +6,10 @@ Mengapa penting menggunakan konstanta (final variables) dalam suatu kelas? Apa k
 Apa yang terjadi jika kita mencoba mengubah nilai suatu konstanta setelah objek dibuat? Berikan contoh.
 Bagaimana cara mendefinisikan konstanta dalam bahasa Java?
 
+
 Jawaban
+
+- fungsi mengembalikan nilai, sedangkan prosedur tidak.
+- final variables diperlukan apabila memerlukan variabel dengan nilai yang konsisten di semua program.
+- akan terjadi error, karena nilai konstanta itu tetap. Error yang muncul misal pada 'java: cannot assign a value to final variable faktorAktivitas'.
+- final <tipe_data> <nama_variabel> = <nilai>;

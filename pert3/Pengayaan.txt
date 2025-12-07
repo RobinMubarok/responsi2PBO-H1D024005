@@ -8,3 +8,8 @@ Setelah menyelesaikan kode, jawab pertanyaan berikut:
 5. Mengapa kita perlu menggunakan Inheritance? Apa keuntungan utamanya dibandingkan membuat dua class yang terpisah sama sekali (misal class Karyawan dan class Manajer dibuat terpisah tanpa hubungan)?
 
 Jawaban:
+- extends digunakan untuk menyatakan pewarisan pada suatu kelas.
+- method overloading digunakan untuk mengakomodir kemungkinan parameter yang berbeda dan tidak mengubah struktur method. Sedangkan overriding adalah pengubahan/redeklarasi dari suatu method.
+- keyword 'super' dalam constructor subclass (Manajer) digunakan untuk mengisi nilai pada atribut yang diwariskan.
+- class Karyawan tidak bisa mengakses variabel tadi. Cara aksesnyaadalah dengan Setter/Getter.
+- Inheritance memungkinkan pembuatan kelas yang lebih praktis dan efisien, mengurangi jumlah atribut yang secara langsung harus dideklarasikan, dan membuat kode lebih terstruktur secara hierarki.
